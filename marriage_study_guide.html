@@ -1,0 +1,1565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marriage &amp; Family Life — Theology 3 Study Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ══════════════════════════════════════════
+   THEME: Deep Navy + Gold + Ivory
+   ══════════════════════════════════════════ */
+:root {
+  --navy:       #0f1f3d;
+  --navy-mid:   #1a3260;
+  --navy-light: #234080;
+  --gold:       #c9922a;
+  --gold-light: #e8b84b;
+  --gold-pale:  #f5e8cc;
+  --ivory:      #faf7f0;
+  --ivory-dark: #f0ead8;
+  --text:       #1a1a2e;
+  --text-soft:  #3a3a5c;
+  --muted:      #7a7a9a;
+  --border:     #d4c9a8;
+  --white:      #ffffff;
+
+  /* accent strip colours for cards */
+  --c1: #c9922a;   /* gold */
+  --c2: #2e6da4;   /* cerulean */
+  --c3: #3a7d5c;   /* forest */
+  --c4: #8b3a62;   /* plum */
+  --c5: #5a5ea8;   /* violet */
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--ivory);
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* ── SCROLLBAR ── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--navy); }
+::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
+
+/* ══════════════════════════════════════════
+   NAV
+   ══════════════════════════════════════════ */
+nav {
+  position: sticky; top: 0; z-index: 100;
+  background: var(--navy);
+  display: flex; align-items: center; gap: 0;
+  padding: 0 1rem;
+  height: 52px;
+  box-shadow: 0 2px 12px rgba(0,0,0,.4);
+  overflow-x: auto;
+}
+nav a {
+  color: rgba(255,255,255,.65);
+  text-decoration: none;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: .03em;
+  white-space: nowrap;
+  padding: 0 0.7rem;
+  height: 52px;
+  display: flex; align-items: center;
+  border-bottom: 3px solid transparent;
+  transition: color .2s, border-color .2s;
+}
+nav a:hover { color: var(--gold-light); border-bottom-color: var(--gold-light); }
+nav .nav-brand {
+  color: var(--gold);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem;
+  font-weight: 700;
+  white-space: nowrap;
+  padding-right: 1rem;
+  margin-right: 0.5rem;
+  border-right: 1px solid rgba(255,255,255,.15);
+  flex-shrink: 0;
+}
+#menu-toggle {
+  display: none;
+  background: none; border: none; cursor: pointer;
+  margin-left: auto; flex-shrink: 0;
+  padding: 8px;
+}
+#menu-toggle span {
+  display: block; width: 22px; height: 2px;
+  background: var(--gold-light); margin: 4px 0;
+  transition: .3s;
+}
+#nav-drawer {
+  display: none;
+  position: fixed; top: 52px; left: 0; right: 0; bottom: 0;
+  background: var(--navy);
+  z-index: 99; padding: 1.5rem;
+  overflow-y: auto;
+}
+#nav-drawer a {
+  display: block; color: rgba(255,255,255,.8);
+  text-decoration: none; padding: 0.75rem 0;
+  font-size: 0.95rem; font-weight: 500;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+#nav-drawer a:hover { color: var(--gold-light); }
+#nav-drawer.open { display: block; }
+
+@media (max-width: 760px) {
+  nav a:not(.nav-brand) { display: none; }
+  #menu-toggle { display: block; }
+}
+
+/* ══════════════════════════════════════════
+   HERO
+   ══════════════════════════════════════════ */
+#hero {
+  background: var(--navy);
+  background-image:
+    radial-gradient(ellipse at 20% 50%, rgba(201,146,42,.12) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(46,109,164,.15) 0%, transparent 55%);
+  color: var(--white);
+  text-align: center;
+  padding: 4rem 1.5rem 3rem;
+  position: relative;
+  overflow: hidden;
+}
+#hero::before {
+  content: '✦';
+  position: absolute; top: 1.5rem; left: 50%; transform: translateX(-50%);
+  color: var(--gold); font-size: 1rem; opacity: .6;
+}
+#hero h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2rem, 6vw, 3.2rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
+}
+#hero h1 span { color: var(--gold-light); }
+#hero p {
+  color: rgba(255,255,255,.65);
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.badge-row { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; }
+.badge {
+  background: rgba(201,146,42,.18);
+  border: 1px solid rgba(201,146,42,.4);
+  color: var(--gold-pale);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+/* ══════════════════════════════════════════
+   SEARCH
+   ══════════════════════════════════════════ */
+.search-wrap {
+  background: var(--navy-mid);
+  padding: 0.9rem 1.5rem;
+  display: flex; align-items: center; gap: 0.75rem;
+}
+.search-label { color: var(--gold-light); font-size: 0.85rem; white-space: nowrap; }
+#search {
+  flex: 1; max-width: 520px;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(201,146,42,.3);
+  border-radius: 6px;
+  color: var(--white);
+  padding: 7px 14px;
+  font-size: 0.875rem;
+  font-family: 'Inter', sans-serif;
+  outline: none;
+  transition: border-color .2s, background .2s;
+}
+#search::placeholder { color: rgba(255,255,255,.35); }
+#search:focus { border-color: var(--gold); background: rgba(255,255,255,.12); }
+mark { background: rgba(201,146,42,.4); color: inherit; border-radius: 2px; }
+
+/* ══════════════════════════════════════════
+   LAYOUT
+   ══════════════════════════════════════════ */
+#main { max-width: 860px; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+
+/* ══════════════════════════════════════════
+   SECTION / ACCORDION
+   ══════════════════════════════════════════ */
+.topic-section {
+  margin-bottom: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(15,31,61,.06);
+}
+.section-header {
+  display: flex; align-items: center; gap: 1rem;
+  background: var(--navy);
+  padding: 1.1rem 1.25rem;
+  cursor: pointer;
+  user-select: none;
+  transition: background .2s;
+}
+.section-header:hover { background: var(--navy-mid); }
+.section-header.open { background: var(--navy-light); }
+.section-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--gold);
+  min-width: 2rem;
+  line-height: 1;
+}
+.section-title-wrap { flex: 1; }
+.section-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.2;
+}
+.section-sub {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,.5);
+  margin-top: 2px;
+  letter-spacing: .03em;
+}
+.toggle-icon {
+  color: var(--gold);
+  font-size: 0.9rem;
+  transition: transform .3s;
+}
+.section-header.open .toggle-icon { transform: rotate(180deg); }
+
+.section-body {
+  background: var(--white);
+  max-height: 0; overflow: hidden;
+  transition: max-height .45s ease;
+}
+.section-body.open { max-height: 99999px; }
+.section-body > * { padding: 0 1.5rem; }
+.section-body > *:first-child { padding-top: 1.5rem; }
+.section-body > *:last-child { padding-bottom: 1.75rem; }
+
+/* ══════════════════════════════════════════
+   QA BLOCKS
+   ══════════════════════════════════════════ */
+.qa-block { padding: 0 1.5rem; margin-bottom: 0.25rem; }
+.qa-block:last-child { padding-bottom: 1.75rem; }
+.qa-block:first-child { padding-top: 1.5rem; }
+.question {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--navy);
+  background: var(--ivory-dark);
+  border-left: 4px solid var(--gold);
+  padding: 0.7rem 1rem;
+  margin-bottom: 0.85rem;
+  border-radius: 0 4px 4px 0;
+}
+.answer { padding-left: 0.25rem; }
+.answer p { margin-bottom: 0.65rem; color: var(--text-soft); }
+.answer p:last-child { margin-bottom: 0; }
+
+/* ══════════════════════════════════════════
+   KEY TERM
+   ══════════════════════════════════════════ */
+.key-term {
+  background: rgba(201,146,42,.15);
+  border-bottom: 2px solid var(--gold);
+  font-weight: 600;
+  color: var(--navy);
+  padding: 0 2px;
+}
+
+/* ══════════════════════════════════════════
+   MINI CARDS
+   ══════════════════════════════════════════ */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 0.85rem;
+}
+.mini-card {
+  background: var(--ivory);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.85rem 1rem;
+  font-size: 0.875rem;
+  color: var(--text-soft);
+  border-top: 4px solid var(--gold);
+}
+.mini-card h4 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 0.3rem;
+}
+.c1 { border-top-color: var(--c1); }
+.c2 { border-top-color: var(--c2); }
+.c3 { border-top-color: var(--c3); }
+.c4 { border-top-color: var(--c4); }
+.c5 { border-top-color: var(--c5); }
+
+/* ══════════════════════════════════════════
+   PRINCIPLE BLOCKS
+   ══════════════════════════════════════════ */
+.principle {
+  display: flex; gap: 1rem; align-items: flex-start;
+  margin-bottom: 0.75rem;
+  padding: 0.85rem 1rem;
+  background: var(--ivory);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+.principle-num {
+  min-width: 2rem; height: 2rem;
+  background: var(--navy);
+  color: var(--gold);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem; font-weight: 700;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.principle h4 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem; font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 0.2rem;
+}
+.principle p, .principle div { font-size: 0.875rem; color: var(--text-soft); }
+
+/* ══════════════════════════════════════════
+   CALLOUT
+   ══════════════════════════════════════════ */
+.callout {
+  background: var(--gold-pale);
+  border-left: 4px solid var(--gold);
+  border-radius: 0 6px 6px 0;
+  padding: 0.85rem 1.1rem;
+  font-size: 0.875rem;
+  color: var(--text);
+  margin: 0.75rem 0;
+}
+.callout.blue {
+  background: #e8f0fb;
+  border-left-color: var(--c2);
+}
+.callout.green {
+  background: #e6f4ec;
+  border-left-color: var(--c3);
+}
+.callout.plum {
+  background: #f4e8ef;
+  border-left-color: var(--c4);
+}
+
+/* ══════════════════════════════════════════
+   VERSE BLOCK
+   ══════════════════════════════════════════ */
+.verse {
+  background: var(--navy);
+  border-radius: 6px;
+  padding: 1.1rem 1.5rem;
+  margin: 0.75rem 0;
+  text-align: center;
+}
+.verse p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--ivory) !important;
+  margin-bottom: 0.4rem !important;
+}
+.verse cite {
+  font-size: 0.78rem;
+  color: var(--gold-light);
+  letter-spacing: .04em;
+  font-style: normal;
+}
+
+/* ══════════════════════════════════════════
+   PILLS
+   ══════════════════════════════════════════ */
+.pill-row { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.5rem 0; }
+.pill {
+  background: var(--navy);
+  color: var(--gold-pale);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+  letter-spacing: .03em;
+}
+.pill.outline {
+  background: transparent;
+  border: 1px solid var(--gold);
+  color: var(--navy);
+}
+
+/* ══════════════════════════════════════════
+   COMPARE TABLE
+   ══════════════════════════════════════════ */
+.compare-table-wrap { overflow-x: auto; margin: 0.75rem 0; }
+.compare-table {
+  width: 100%; border-collapse: collapse;
+  font-size: 0.875rem;
+}
+.compare-table th {
+  background: var(--navy);
+  color: var(--gold-pale);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem;
+  padding: 0.6rem 1rem;
+  text-align: left;
+}
+.compare-table td {
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+  color: var(--text-soft);
+}
+.compare-table tr:nth-child(even) td { background: var(--ivory); }
+.compare-table tr:hover td { background: var(--gold-pale); }
+
+/* ══════════════════════════════════════════
+   QUICK FACTS
+   ══════════════════════════════════════════ */
+.quick-facts {
+  background: var(--ivory-dark);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.9rem 1.1rem;
+  margin: 0.75rem 0;
+  font-size: 0.875rem;
+}
+.quick-facts h4 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem; font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 0.5rem;
+}
+.quick-facts ul { padding-left: 1.25rem; color: var(--text-soft); }
+.quick-facts li { margin-bottom: 0.3rem; }
+
+/* styled list */
+ul.styled { padding-left: 1.25rem; margin: 0.5rem 0; }
+ul.styled li { color: var(--text-soft); margin-bottom: 0.35rem; font-size: 0.875rem; }
+
+/* ══════════════════════════════════════════
+   GOODS BLOCK (Augustine style)
+   ══════════════════════════════════════════ */
+.goods-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin: 0.75rem 0;
+}
+.goods-card {
+  background: var(--navy);
+  border-radius: 8px;
+  padding: 1.1rem;
+  text-align: center;
+}
+.goods-card .latin {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem;
+  font-style: italic;
+  color: var(--gold-light);
+  display: block;
+  margin-bottom: 0.3rem;
+}
+.goods-card .english {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgba(255,255,255,.7);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+@media (max-width: 480px) { .goods-grid { grid-template-columns: 1fr; } }
+
+/* ══════════════════════════════════════════
+   SCROLL TO TOP
+   ══════════════════════════════════════════ */
+#scrolltop {
+  position: fixed; bottom: 1.5rem; right: 1.5rem;
+  background: var(--navy);
+  color: var(--gold);
+  border: 1px solid var(--gold);
+  border-radius: 50%;
+  width: 40px; height: 40px;
+  display: flex; align-items: center; justify-content: center;
+  text-decoration: none;
+  font-size: 1rem;
+  opacity: 0;
+  transition: opacity .3s;
+  pointer-events: none;
+  z-index: 50;
+}
+#scrolltop.visible { opacity: 1; pointer-events: auto; }
+
+/* ══════════════════════════════════════════
+   PROGRESS BAR
+   ══════════════════════════════════════════ */
+#progress-bar {
+  position: fixed; top: 0; left: 0;
+  height: 3px;
+  background: var(--gold);
+  width: 0%;
+  z-index: 200;
+  transition: width .1s;
+}
+
+/* ══════════════════════════════════════════
+   MODULE DIVIDER
+   ══════════════════════════════════════════ */
+.section-divider {
+  text-align: center;
+  padding: 0.5rem 0 0.25rem;
+  font-size: 0.7rem;
+  color: var(--muted);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+/* ══════════════════════════════════════════
+   RESPONSIVE
+   ══════════════════════════════════════════ */
+@media (max-width: 600px) {
+  .card-grid { grid-template-columns: 1fr 1fr; }
+  #hero h1 { font-size: 1.7rem; }
+  .compare-table { font-size: 0.8rem; }
+  .section-body > *, .qa-block { padding-left: 1rem; padding-right: 1rem; }
+}
+</style>
+</head>
+<body>
+
+<div id="progress-bar"></div>
+
+<!-- ── NAV ── -->
+<nav>
+  <span class="nav-brand">Theo 3</span>
+  <a href="#topic1">1. Vocation</a>
+  <a href="#topic2">2. Sexual Ethics</a>
+  <a href="#topic3">3. God's Design</a>
+  <a href="#topic4">4. Human Sexuality</a>
+  <a href="#topic5">5. Biblical Foundation</a>
+  <a href="#topic6">6. Theological Foundation</a>
+  <a href="#topic7">7. Canon Law I</a>
+  <a href="#topic8">8. Canon Law II</a>
+  <button id="menu-toggle" aria-label="Open menu" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ── MOBILE DRAWER ── -->
+<div id="nav-drawer">
+  <a href="#topic1" onclick="closeMenu()">1. Vocation — A Call to Holiness</a>
+  <a href="#topic2" onclick="closeMenu()">2. Catholic Sexual Ethics</a>
+  <a href="#topic3" onclick="closeMenu()">3. God's Design for Marriage</a>
+  <a href="#topic4" onclick="closeMenu()">4. Human Sexuality</a>
+  <a href="#topic5" onclick="closeMenu()">5. Biblical Foundation of Marriage</a>
+  <a href="#topic6" onclick="closeMenu()">6. Theological Foundation of Marriage</a>
+  <a href="#topic7" onclick="closeMenu()">7. Canon Laws Governing Marriage I</a>
+  <a href="#topic8" onclick="closeMenu()">8. Canon Laws Governing Marriage II</a>
+</div>
+
+<!-- ── HERO ── -->
+<header id="hero">
+  <h1>Marriage &amp; <span>Family Life</span></h1>
+  <p>San Beda College Alabang · Theology 3 · Oral Exam Review</p>
+  <div class="badge-row">
+    <span class="badge">Vocation</span>
+    <span class="badge">Sexual Ethics</span>
+    <span class="badge">God's Design</span>
+    <span class="badge">Human Sexuality</span>
+    <span class="badge">Biblical Foundation</span>
+    <span class="badge">Theological Foundation</span>
+    <span class="badge">Canon Law I</span>
+    <span class="badge">Canon Law II</span>
+  </div>
+</header>
+
+<!-- ── SEARCH ── -->
+<div class="search-wrap">
+  <span class="search-label">🔍 Quick Find:</span>
+  <input type="text" id="search" placeholder="Search any concept, term, or topic…">
+</div>
+
+<main id="main">
+
+<!-- ══════════════════════════════════════════════
+     TOPIC 1: VOCATION
+══════════════════════════════════════════════ -->
+<section class="topic-section" id="topic1">
+  <div class="section-header" onclick="toggleSection(this)">
+    <span class="section-num">01</span>
+    <div class="section-title-wrap">
+      <div class="section-title">Vocation — A Call to Holiness</div>
+      <div class="section-sub">What is your life calling?</div>
+    </div>
+    <span class="toggle-icon">▼</span>
+  </div>
+  <div class="section-body">
+
+    <div class="qa-block">
+      <div class="question">What is Vocation?</div>
+      <div class="answer">
+        <p>The word <em>vocation</em> comes from the Latin <span class="key-term">vocare</span> — meaning "to call."</p>
+        <div class="card-grid">
+          <div class="mini-card c1"><h4>Definition 1</h4>A summons or strong inclination to a particular state or course of action — especially a divine call to the religious life.</div>
+          <div class="mini-card c2"><h4>Definition 2</h4>An entry into the priesthood or a religious order.</div>
+          <div class="mini-card c3"><h4>Definition 3</h4>The work in which a person is employed: occupation.</div>
+          <div class="mini-card c4"><h4>Definition 4</h4>The persons engaged in a particular occupation. — <em>Merriam-Webster</em></div>
+        </div>
+        <div class="callout">Vocation is not a profession or career where you think <em>"What do I want to be?"</em> — it is a calling of <strong>"What does God want me to be?"</strong></div>
+      </div>
+    </div>
+
+    <div class="qa-block">
+      <div class="question">What are the Different Vocations?</div>
+      <div class="answer">
+        <div class="principle">
+          <div class="principle-num">1</div>
+          <div>
+            <h4>Single Life / Single Blessedness</h4>
+            <p>People who are committed to living the single life. They love God and serve others — not committed to one person. They can love everyone just as Jesus did.</p>
+            <p><strong>Gifts &amp; Talents:</strong> ability to serve others, equal love for all, love of God.</p>
+          </div>
+        </div>
+        <div class="principle">
+          <div class="principle-num">2</div>
+          <div>
+            <h4>Ordained Priesthood</h4>
+            <p>Jesus supports his followers personally through ordained priesthood. The priestly vocation is a call to serve and a call to celibate love. Roles: Popes, Bishops, Deacons, Priests.</p>
+            <p><strong>Gifts &amp; Talents:</strong> ability to serve others' needs, commit to celibacy, guide and help others, become closer to God.</p>
+          </div>
+        </div>
+        <div class="principle">
+          <div class="principle-num">3</div>
+          <div>
+            <h4>Religious Life</h4>
+            <p>Following Jesus and the Gospel. Requires making the three evangelical vows: <span class="key-term">Poverty, Chastity, Obedience</span>.</p>
+            <p><strong>Gifts &amp; Talents:</strong> dedication to God, prayer, holiness, living life the way Jesus did. Roles: Religious brothers/sisters, deacon, bishop, priest.</p>
+          </div>
+        </div>
+        <div class="principle">
+          <div class="principle-num">4</div>
+          <div>
+            <h4>Married Life</h4>
+            <p>Marriage is a vocation as you must commit and devote yourself to the married relationship. Jesus restores God's original plan and purpose for marriage.</p>
+            <p><strong>God's two purposes:</strong> the sexual expression of creativity, and the procreation of children. Marriage is a sacrament that guides and strengthens couples.</p>
+            <p><strong>Gifts &amp; Talents:</strong> Loyalty, Trust, Honesty.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="qa-block">
+      <div class="question">How do we discern our Vocation?</div>
+      <div class="answer">
+        <p><strong>Discernment through Prayer</strong> — a process of prayer that helps us determine what God intends for us. It calls us to look at many sides of decisions, considering all different alternatives, and involves praying over a decision and asking for guidance from the Holy Spirit.</p>
+        <div class="quick-facts">
+          <h4>Steps of Discernment</h4>
+          <ul>
+            <li><strong>Step 1:</strong> Find a quiet place to pray. Relax, find a comfortable position, close your eyes, and become aware of God's presence.</li>
+            <li><strong>Step 2:</strong> Select a special word that makes you think of God and recite it to keep distractions away.</li>
+            <li><strong>Step 3:</strong> Thank the Lord, tell Jesus of your love for Him, ask the Holy Spirit to remain with you, then slowly recite an Our Father.</li>
+          </ul>
+        </div>
+        <div class="callout blue">Other sources for prayer: (1) Sacred Scripture, (2) Liturgy of the Church, (3) Practice of Virtues. Prayer is a <em>dialogue</em> with God — the most important part is listening to what God has to say.</div>
+        <div class="quick-facts">
+          <h4>Scriptural Calls</h4>
+          <ul>
+            <li><strong>John 1:35–50</strong> — Call of the First Disciples</li>
+            <li><strong>Mark 10:17–22</strong> — Call of the Rich Young Man</li>
+            <li><strong>Matthew 10:1–40</strong> — Call of the Twelve</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     TOPIC 2: CATHOLIC SEXUAL ETHICS
+══════════════════════════════════════════════ -->
+<section class="topic-section" id="topic2">
+  <div class="section-header" onclick="toggleSection(this)">
+    <span class="section-num">02</span>
+    <div class="section-title-wrap">
+      <div class="section-title">Catholic Sexual Ethics</div>
+      <div class="section-sub">Foundations of Human Sexuality · Chastity · Offenses</div>
+    </div>
+    <span class="toggle-icon">▼</span>
+  </div>
+  <div class="section-body">
+
+    <div class="qa-block">
+      <div class="question">What are the Foundations of Human Sexuality?</div>
+      <div class="answer">
+        <div class="card-grid">
+          <div class="mini-card c1">
+            <h4>1. Created Male &amp; Female in God's Image</h4>
+            God is love, and He created humanity for love and communion. Being male or female is part of our God-given identity. Sexuality is integral to the human person and relates to our capacity to love, form relationships, and procreate.
+          </div>
+          <div class="mini-card c2">
+            <h4>2. Equal Dignity &amp; Complementarity</h4>
+            Man and woman are equal in dignity but different in their roles and gifts. Their differences are complementary, meant for mutual support and the flourishing of family life.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="qa-block">
+      <div class="question">What is Chastity?</div>
+      <div class="answer">
+        <p><span class="key-term">Chastity</span> is the integration of sexuality into the whole person — body and soul. It ensures inner unity and harmony in expressing love. (CCC 2337)</p>
+        <div class="card-grid">
+          <div class="mini-card c1"><h4>Self-Mastery</h4>Discipline over passions, choosing what is good.</div>
+          <div class="mini-card c2"><h4>Virtue of Temperance</h4>Chastity moderates desire through reason.</div>
+          <div class="mini-card c3"><h4>A Lifelong Effort</h4>Requires daily commitment and prayer.</div>
+          <div class="mini-card c4"><h4>Form of Love</h4>Chastity leads to genuine friendship and self-giving love.</div>
+        </div>
+        <div class="callout">The chaste person is not governed by his or her emotions. Rather, they understand the meaning of sexual feelings and appropriate behaviors. Chaste self-possession brings true freedom and peace. (CCC 2339 — "apprenticeship in self-mastery")</div>
+      </div>
+    </div>
+
+    <div class="qa-block">
+      <div class="question">What are the Forms of Chastity by State of Life?</div>
+      <div class="answer">
+        <div class="card-grid">
+          <div class="mini-card c1"><h4>Married Couples</h4>Live conjugal chastity.</div>
+          <div class="mini-card c2"><h4>Single People</h4>Practice continence.</div>
+          <div class="mini-card c3"><h4>Consecrated Celibates</h4>Offer their sexuality to God.</div>
+          <div class="mini-card c4"><h4>Engaged Couples</h4>Live chastely as a preparation for marriage.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="qa-block">
+      <div class="question">What are the Offenses Against Chastity? (6th &amp; 9th Commandments)</div>
+      <div class="answer">
+        <div class="principle">
+          <div class="principle-num">1</div>
+          <div><h4>Lust</h4><p>A disordered or inordinate desire for or enjoyment of sexual pleasure.</p></div>
+        </div>
+        <div class="principle">
+          <div class="principle-num">2</div>
+          <div><h4>Masturbation</h4><p>Use of sexuality in a self-centered way, apart from its purpose in love and life.</p></div>
+        </div>
+        <div class="principle">
+          <div class="principle-num">3</div>
+          <div><h4>Fornication</h4><p>Sexual relations outside marriage.</p></div>
+        </div>
+        <div class="principle">
+          <div class="principle-num">4</div>
+          <div><h4>Pornography</h4><p>Consists in removing real or simulated sexual acts from the intimacy of the partners in order to display them deliberately to third parties.</p></div>
+        </div>
+        <div class="principle">
+          <div class="principle-num">5</div>
+          <div><h4>Prostitution</h4><p>Reducing the person to an instrument of sexual pleasure.</p></div>
+        </div>
+        <div class="principle">
+          <div class="principle-num">6</div>
+          <div><h4>Rape</h4><p>The forcible violation of the sexual intimacy of another person.</p></div>
+        </div>
+        <div class="principle">
+          <div class="principle-num">7</div>
+          <div><h4>Homosexual Acts</h4><p>Not ordered toward life or complementarity; considered intrinsically disordered. However, persons with same-sex attraction must be treated with respect, compassion, and are called to live chastely.</p></div>
+        </div>
+        <div class="callout">The Sixth Commandment isn't just about adultery — it upholds the holiness of sexuality. Sexuality is a gift meant to be expressed in love, within the bond of marriage. Chastity protects the dignity of the human person and leads to authentic love and communion.</div>
+      </div>
+    </div>
+
+    <div class="qa-block">
+      <div class="question">What are the Purposes of Sexuality in Marriage?</div>
+      <div class="answer">
+        <div class="card-grid">
+          <div class="mini-card c1">
+            <h4>1. Good of the Spouses</h4>
+            Unity, fidelity, joy — sexuality reflects total self-giving, open to life and love.
+          </div>
+          <div class="mini-card c2">
+            <h4>2. Procreation</h4>
+            Openness to life. The marital act is noble, honorable, a sign of joy, unity, and mutual enrichment — a participation in God's creative love.
+          </div>
+        </div>
+        <div class="callout plum">These two purposes <strong>cannot be separated</strong> without harming marriage. The marital act must be both unitive and procreative by its very nature.</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     TOPIC 3: GOD'S DESIGN FOR MARRIAGE
+══════════════════════════════════════════════ -->
+<section class="topic-section" id="topic3">
+  <div class="section-header" onclick="toggleSection(this)">
+    <span class="section-num">03</span>
+    <div class="section-title-wrap">
+      <div class="section-title">God's Design for Marriage</div>
+      <div class="section-sub">Genesis Accounts · Original Human Experiences · Original Sin</div>
+    </div>
+    <span class="toggle-icon">▼</span>
+  </div>
+  <div class="section-body">
+
+    <div class="qa-block">
+      <div class="question">What are the Two Genesis Accounts of Creation?</div>
+      <div class="answer">
+        <div class="compare-table-wrap"><table class="compare-table">
+          <tr><th>Genesis Chapter 1 (Priestly Account)</th><th>Genesis Chapter 2 (Yahwist Account)</th></tr>
+          <tr><td>Reveals the <span class="key-term">Procreative Dimension</span> of marriage: "Be fruitful and increase in number, fill the earth and subdue it." (Gen 1:28)</td><td>Reveals the <span class="key-term">Unitive Dimension</span>: "This is now bone of my bones and flesh of my flesh." (Gen 2:23)</td></tr>
+          <tr><td>Procreation is only possible between a man and a woman: "male and female He created them." (Gen 1:27) — Complementarity of the sexes.</td><td>"For this reason, a man will leave his father and mother and be united to his wife, and they will become one flesh." (Gen 2:24) — Exclusive and Permanent.</td></tr>
+        </table></div>
+      </div>
+    </div>
+
+    <div class="qa-block">
+      <div class="question">What are the Original Human Experiences?</div>
+      <div class="answer">
+        <div class="card-grid">
+          <div class="mini-card c1">
+            <h4>Original Solitude</h4>
+            Alone with God. In the presence of God. Intimacy with God. Something missing. The lone human being.
+          </div>
+          <div class="mini-card c2">
+            <h4>Original Unity</h4>
+            Alone with another human being. Created to be relational. Capacity to give and to receive. They were a <em>communion of persons</em> — intersubjective, transparent to each other, they simply delighted in each other. They did not use each other.
+          </div>
+          <div class="mini-card c3">
+            <h4>Original Holiness</h4>
+            Order and harmony: Man–God = intimacy and openness. Man–woman = mutual attraction and love. Man–rest of creation = respect and care. <em>(Before Original Sin)</em>
+          </div>
+          <div class="mini-card c4">
+            <h4>Original Nakedness</h4>
+            Symbolizes freedom, openness, intimacy, and absence of disordered passions.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="qa-block">
+      <div class="question">What was the effect of Original Sin on marriage?</div>
+      <div class="answer">
+        <div class="quick-facts">
+          <h4>The Fall (Genesis 3)</h4>
+          <ul>
+            <li>Temptation of the serpent → Desire to be like God → Disobedience → Abuse of freedom, Pride, Arrogance</li>
+            <li>They realized they were naked; they hid and tried to cover their bodies</li>
+            <li>Nakedness now symbolizes shame and guilt</li>
+            <li>Malice entered the scene; mutual attraction and love turned into domination and lust</li>
+            <li>Original innocence was lost; break in relationship and communication</li>
+          </ul>
+        </div>
+        <div class="compare-table-wrap"><table class="compare-table">
+          <tr><th>Consequences for Man</th><th>Consequences for Woman</th></tr>
+          <tr><td>Distorted leadership (to rule over her)</td><td>Pain in childbearing</td></tr>
+          <tr><td>Cursed ground (works for food)</td><td>Desire for husband (wants to be in charge)</td></tr>
+          <tr><td>Hard work / labor</td><td></td></tr>
+        </table></div>
+        <div class="callout green">Sin <em>corrupted</em> God's original plan for marriage, but did not destroy it. Jesus restores God's original plan and purpose for marriage.</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     TOPIC 4: HUMAN SEXUALITY
+══════════════════════════════════════════════ -->
+<section class="topic-section" id="topic4">
+  <div class="section-header" onclick="toggleSection(this)">
+    <span class="section-num">04</span>
+    <div class="section-title-wrap">
+      <div class="section-title">Human Sexuality</div>
+      <div class="section-sub">Fully Man, Fully Woman · Unitive &amp; Procreative · Chastity</div>
+    </div>
+    <span class="toggle-icon">▼</span>
+  </div>
+  <div class="section-body">
+
+    <div class="qa-block">
+      <div class="question">What is Human Sexuality?</div>
+      <div class="answer">
+        <div class="verse">
+          <p>"Sexuality is a fundamental component of human personality, one of its modes of being, of manifestation, of communicating with others, of feeling, of expressing and of living human love."</p>
+          <cite>— Truth and Meaning of Human Sexuality</cite>
+        </div>
+        <p>Human sexuality should be founded upon a sound Christian anthropology, which describes the human person as:</p>
+        <div class="pill-row">
+          <span class="pill">A being at once corporeal and spiritual (CCC 362)</span>
+          <span class="pill">Made in the image of God (CCC 355)</span>
+          <span class="pill">With complementarity and equality of the sexes (CCC 355/9)</span>
+        </div>
+        <div class="callout">Man is a sexual being. To be human is to be sexual in one's very being. Our sexuality affects many, if not all, of our day-to-day actions. The gift of sexuality comes from God — who is both relational and social in and of Himself. The love of the Trinity is so strong that it has to create. Thus, <strong>love and sex should always be connected.</strong></div>
+      </div>
+    </div>
+
+    <div class="qa-block">
+      <div class="question">What are the Two Dimensions of Human Sexuality?</div>
+      <div class="answer">
+        <p>The Church teaches that human sexual intercourse is an action inscribed by the Creator with a <span class="key-term">two-fold meaning</span>:</p>
+        <div class="card-grid">
+          <div class="mini-card c1">
+            <h4>Unitive Dimension</h4>
+            Love-making is an expression of intimacy, a "two in one flesh" encounter, demanding a deep level of commitment and love for its natural fulfillment. It strengthens the bond of love between husband and wife.
+          </div>
+          <div class="mini-card c2">
+            <h4>Procreative Dimension</h4>
+            Marriage and sexual union are also given for the procreation of children. "Be fertile and multiply" (Gen 1:28). Union of egg and sperm produces new human life. Marital commitment and fidelity provide the only stable environment for sexual expression.
+          </div>
+        </div>
+        <div class="callout">Sex is not a shameful thing, it is a divine gift, ordained to life, to love and to fruitfulness. (<em>Familiaris Consortio</em>, 1981). "Sex is, indeed, good, beautiful, and holy, but only at the service of and for the sake of eternal values." (Joseph de Torre, 1988)</div>
+      </div>
+    </div>
+
+    <div class="qa-block">
+      <div class="question">What are Dehumanizing Acts against Sexuality?</div>
+      <div class="answer">
+        <p>Sexual activity outside of marriage is dehumanizing. Marriage is the only relationship in which sexual activity can achieve the full God-given meaning — a faithful, exclusive and total gift of oneself to another, open to love and the creation of new life.</p>
+        <div class="principle">
+          <div class="principle-num">1</div>
+          <div><h4>Masturbation</h4><p>An intrinsically and seriously disordered act because sexual activity is meant to be shared with one's spouse in the committed relationship of marriage. It frustrates the essential purpose of the sexual act.</p></div>
+        </div>
+        <div class="principle">
+          <div class="principle-num">2</div>
+          <div><h4>Homosexual Acts</h4><p>The purpose of the sexual faculty is the expression of married love and the generation of new life in the context of the family. To use the sexual faculty in a way in which the generation of new life is impossible is to misuse it and is intrinsically wrong.</p></div>
+        </div>
+        <div class="principle">
+          <div class="principle-num">3</div>
+          <div><h4>Cohabitation / Fornication</h4><p>Practice of an unmarried man and woman living together. "One does not try out a permanent commitment." There is no statistical evidence that testing produces any guarantees.</p></div>
+        </div>
+        <div class="principle">
+          <div class="principle-num">4</div>
+          <div><h4>Prostitution</h4><p>Sexual intercourse done merely for pleasure by people with no commitment. Outright disrespect for the person — the gift of sexuality is commodified and the person is used as a means or object of pleasure.</p></div>
+        </div>
+        <div class="principle">
+          <div class="principle-num">5</div>
+          <div><h4>Contraception, Sterilization, Abortion</h4><p>Acts that sever the unitive and procreative dimensions of the marital act; also includes some reproductive technologies including cloning and embryonic stem cell research.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="qa-block">
+      <div class="question">What is Sexual Maturity &amp; Sexual Health?</div>
+      <div class="answer">
+        <div class="card-grid">
+          <div class="mini-card c3">
+            <h4>Sexual Maturity</h4>
+            The capacity to form a stable relationship with the opposite sex which is emotionally and physically satisfying.
+          </div>
+          <div class="mini-card c4">
+            <h4>Sexual Health</h4>
+            The integration of the somatic, emotional, intellectual and social aspects of sexual well-being, in ways that are positively enriching and that enhance personality, communication and love.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="qa-block">
+      <div class="question">Key Definition — Chastity (CCC 2337–2338)</div>
+      <div class="answer">
+        <div class="callout">
+          <strong>"Chastity"</strong> is the virtue of sexual self-control and is an aspect of the cardinal virtue of temperance. As a religious virtue, chastity motivates and enables us to use the gift of our sexuality in complete accordance with God's plan. Chastity makes possible the <span class="key-term">successful integration of sexuality within the person</span> and thus the inner unity of the person in his bodily and spiritual being. (CCC 2337)
+        </div>
+        <div class="callout blue">
+          "The chaste person maintains the integrity of the powers of life and love placed in him. This integrity ensures the unity of the person; it is opposed to any behavior that would impair it." (CCC 2338)
+        </div>
+        <div class="verse">
+          <p>"The future of humanity passes by way of the family."</p>
+          <cite>— Pope John Paul II</cite>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     TOPIC 5: BIBLICAL FOUNDATION OF MARRIAGE
+══════════════════════════════════════════════ -->
+<section class="topic-section" id="topic5">
+  <div class="section-header" onclick="toggleSection(this)">
+    <span class="section-num">05</span>
+    <div class="section-title-wrap">
+      <div class="section-title">Biblical Foundation of Marriage</div>
+      <div class="section-sub">God Made Marriage · Covenant · OT &amp; NT Development</div>
+    </div>
+    <span class="toggle-icon">▼</span>
+  </div>
+  <div class="section-body">
+
+    <div class="qa-block">
+      <div class="question">What are the Contents of the Biblical Foundation of Marriage?</div>
+      <div class="answer">
+        <div class="pill-row">
+          <span class="pill outline">I. God Made Marriage</span>
+          <span class="pill outline">II. God Made Marriage to Last for Life</span>
+          <span class="pill outline">III. God Made Marriage to Be a Covenant</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="qa-block">
+      <div class="question">I. God Made Marriage</div>
+      <div class="answer">
+        <ul class="styled">
+          <li>The institution of marriage began in the Garden of Eden.</li>
+          <li>Adam and Eve were created in a state of marriage.</li>
+          <li><strong>God is the author of marriage</strong> — it was not invented by man.</li>
+          <li>"It is not good that the man should be alone." (Genesis 2:18)</li>
+          <li>The Bible opens with a marriage — between a man and a woman (Genesis), and closes with a wedding — between a Groom and Bride (Revelation).</li>
+          <li>God designed marriage as the <span class="key-term">foundational element</span> for all human interaction and for society — including churches, schools, and governments.</li>
+        </ul>
+        <div class="quick-facts">
+          <h4>What to Do in Marriage (Genesis 2:21–24)</h4>
+          <ul>
+            <li><strong>Receive</strong> — Your mate as a gift from God (Gen 2:21–23)</li>
+            <li><strong>Leave</strong> — Your parents physically, emotionally, and financially (Gen 2:24)</li>
+            <li><strong>Cleave</strong> — To your mate / stick to (Gen 2:24)</li>
+            <li><strong>One-flesh</strong> — The husband and wife become one / spiritual (Gen 2:24)</li>
+          </ul>
+        </div>
+        <div class="quick-facts">
+          <h4>God's Purpose in Giving Marriage to All Mankind</h4>
+          <ul>
+            <li>To compensate for the weakness a man or woman has in being alone</li>
+            <li>To establish a faithful, monogamous relation, essential for the successful survival of society</li>
+            <li>To create the one-flesh relationship</li>
+          </ul>
+        </div>
+        <div class="quick-facts">
+          <h4>Purposes of Marriage in the Old Testament</h4>
+          <ul>
+            <li><strong>Mirror</strong> — God's image (Gen 1:26)</li>
+            <li><strong>Mutually complete each other</strong> — Fill each other's gaps (Gen 2:18)</li>
+            <li><strong>Multiply a godly legacy</strong> (Gen 1:28)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="qa-block">
+      <div class="question">II. God Made Marriage to Last for Life</div>
+      <div class="answer">
+        <p>God made the marital union of one man and one woman last for their whole life. God's plan is for one man to love one woman. The only exception is through the death of one of the partners.</p>
+        <div class="verse">
+          <p>"What God has joined together, let no one separate."</p>
+          <cite>— Mark 10:9 / Matthew 19:5</cite>
+        </div>
+        <div class="callout">Jesus explains that divorce was granted by Moses as a concession because of the <em>hardness of the hearts of men</em>. God's opinion and teaching have not changed concerning divorce. Marriage was corrupted by sin (Genesis 3:16–19), but God's grace is available to whoever seeks it to stay married.</div>
+        <p>God's grace will do for us what we cannot do for ourselves. "If you will marry by the will of God, then you can remain married by the grace of God."</p>
+      </div>
+    </div>
+
+    <div class="qa-block">
+      <div class="question">III. God Made Marriage to Be a Biblical Covenant</div>
+      <div class="answer">
+        <p><span class="key-term">Covenant</span> — a personal, solemn promise of faithful love that involves mutual commitments and creates a sacred relationship. The words are <em>commitment</em> and not <em>convenience.</em></p>
+        <div class="compare-table-wrap"><table class="compare-table">
+          <tr><th>Covenant</th><th>Contract</th></tr>
+          <tr><td>Based on <strong>trust</strong> and unlimited responsibility between two parties</td><td>Based on <strong>distrust</strong> and limited liability</td></tr>
+          <tr><td>Cannot be broken if new circumstances occur</td><td>Can be voided by mutual consent</td></tr>
+          <tr><td>Speaks more about <strong>love and commitment</strong>; lifelong, sacrifice, love</td><td>More about giving and taking</td></tr>
+          <tr><td>Biblical model — unique to Christian Marriage</td><td>Legal/secular model</td></tr>
+        </table></div>
+        <div class="quick-facts">
+          <h4>Four Primary Biblical Roles of the Husband (Ephesians 5:23–27)</h4>
+          <ul>
+            <li><strong>Lead</strong> (Eph 5:23)</li>
+            <li><strong>Love</strong> (Eph 5:25)</li>
+            <li><strong>Serve</strong> (Eph 5:26)</li>
+            <li><strong>Provide for</strong> — Financially, emotionally, physically, and spiritually (Eph 5:26–27)</li>
+          </ul>
+        </div>
+        <div class="quick-facts">
+          <h4>Four Primary Biblical Roles of the Wife (Ephesians 5:21–33)</h4>
+          <ul>
+            <li><strong>Help</strong> (Eph 5:24)</li>
+            <li><strong>Respect</strong> (Eph 5:33)</li>
+            <li><strong>Love</strong> (Eph 5:33)</li>
+            <li><strong>Submit</strong> — To your own husband (Eph 5:22)</li>
+          </ul>
+        </div>
+        <div class="callout blue">Specific command for <em>both</em> husband and wife (Eph 5:21): "Submitting to one another out of reverence for Christ." This marriage covenant is not a give-and-take relationship but a total willingness to give and continue to give to each other, just like God keeps giving to us.</div>
+      </div>
+    </div>
+
+    <div class="qa-block">
+      <div class="question">How did the OT and NT contribute to the development of Marriage?</div>
+      <div class="answer">
+        <div class="compare-table-wrap"><table class="compare-table">
+          <tr><th>Old Testament</th><th>New Testament</th></tr>
+          <tr><td>Adam and Eve created in a state of marriage; God is the author of marriage</td><td>Confirms there is no room for polygamy — marriage is an exclusive union</td></tr>
+          <tr><td>God's original plan: a union of love, created in the image and likeness of God</td><td>Marriage reflects the new covenant of Jesus Christ and the Church — "relationship between husband and wife parallels the intimate relationship of Christ and the Church"</td></tr>
+          <tr><td>Demonstrates how sin affected the goodness of marriage; God's command "Be fruitful and multiply" (Gen 1:18)</td><td>Jesus confirms that divorce is not part of God's plan — marriage is indissoluble (covenant). "What God has joined, no person must separate." (Matthew 19:5)</td></tr>
+          <tr><td>Unfaithfulness to God was like adultery</td><td>Marriage is not a mere human institution</td></tr>
+        </table></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     TOPIC 6: THEOLOGICAL FOUNDATION OF MARRIAGE
+══════════════════════════════════════════════ -->
+<section class="topic-section" id="topic6">
+  <div class="section-header" onclick="toggleSection(this)">
+    <span class="section-num">06</span>
+    <div class="section-title-wrap">
+      <div class="section-title">Theological Foundation of Marriage</div>
+      <div class="section-sub">Covenant Love · Sacrament · The Goods of Marriage</div>
+    </div>
+    <span class="toggle-icon">▼</span>
+  </div>
+  <div class="section-body">
+
+    <div class="qa-block">
+      <div class="question">What is the Theological Definition of Marriage?</div>
+      <div class="answer">
+        <div class="verse">
+          <p>"The matrimonial covenant, by which a man and a woman establish between themselves a partnership of the whole of life, which of its own very nature is ordered to the good of the spouses and the procreation and education of children, has been raised by Christ the Lord to the dignity of a sacrament between the baptized."</p>
+          <cite>— Catechism of the Catholic Church 1601</cite>
+        </div>
+        <p>The sacrament of marriage or matrimony is a covenant between a baptized man and woman — together they form an intimate communion of life and love.</p>
+        <div class="callout">A <span class="key-term">sacrament</span> is a visible sign instituted by Christ to give grace. Christian marriage and the Christian family are deeply rooted in the Trinity.</div>
+      </div>
+    </div>
+
+    <div class="qa-block">
+      <div class="question">Why is Marriage important from the theological perspective?</div>
+      <div class="answer">
+        <div class="principle">
+          <div class="principle-num">1</div>
+          <div><h4>It is not a human institution but a divine one</h4><p>God himself designed it.</p></div>
+        </div>
+        <div class="principle">
+          <div class="principle-num">2</div>
+          <div><h4>God elevated it into a sacrament in Christ</h4><p>A sacrament is a sign, instituted by Christ, to show God's love to the world and bring grace, joy and comfort to us.</p></div>
+        </div>
+        <div class="principle">
+          <div class="principle-num">3</div>
+          <div><h4>At the heart of every marriage is love</h4><p>To will the good of your spouse and family.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="qa-block">
+      <div class="question">Who is the "minister" in the Sacrament of Marriage?</div>
+      <div class="answer">
+        <div class="callout">In this Sacrament, it is the <strong>couple who are the ministers</strong> of the Sacrament, and the priest or deacon who presides is the Church's witness to the Sacrament.</div>
+        <div class="callout blue">Marriage is <strong>not only a RIGHT but a mutual GIFT</strong> of two persons. It is a covenant which establishes between husband and wife a "partnership of the whole life" in which they "mutually hand over and accept each other." (Canon Law 1055)</div>
+      </div>
+    </div>
+
+    <div class="qa-block">
+      <div class="question">What are the Purposes of Matrimony?</div>
+      <div class="answer">
+        <p>Married love has both <span class="key-term">unitive and procreative</span> purposes of marriage.</p>
+        <div class="verse">
+          <p>"By its very nature the institution of marriage and married love is ordered to the procreation and education of the offspring and it is in them that it finds its crowning glory."</p>
+          <cite>— CCC 1652 / GS 48</cite>
+        </div>
+        <div class="card-grid">
+          <div class="mini-card c1"><h4>FREE</h4>Jesus modeled through His passion and death what free love really means.</div>
+          <div class="mini-card c2"><h4>TOTAL</h4>As Jesus gave us all that He had, He shows us what total love really looks like.</div>
+          <div class="mini-card c3"><h4>FAITHFUL</h4>Jesus was faithful to His Father's will and faithful to each one of us.</div>
+          <div class="mini-card c4"><h4>FRUITFUL</h4>There was never a more fruitful life and death than that of Jesus Christ. His death brings new life to humanity.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="qa-block">
+      <div class="question">What are the Goods (Bona) of Marriage? — St. Augustine</div>
+      <div class="answer">
+        <p>The expression "goods" (<em>bona</em>) of marriage originated with <span class="key-term">St. Augustine</span>:</p>
+        <div class="goods-grid">
+          <div class="goods-card">
+            <span class="latin">proles</span>
+            <span class="english">Offspring</span>
+          </div>
+          <div class="goods-card">
+            <span class="latin">fides</span>
+            <span class="english">Chaste Fidelity</span>
+          </div>
+          <div class="goods-card">
+            <span class="latin">sacramentum</span>
+            <span class="english">Unbreakable Bond</span>
+          </div>
+        </div>
+        <div class="principle">
+          <div class="principle-num">A</div>
+          <div><h4>Offspring (proles)</h4><p>The fruitfulness of the conjugal union fulfills man's and woman's longing for self-perpetuation and the perpetuation, in offspring, of conjugal love.</p></div>
+        </div>
+        <div class="principle">
+          <div class="principle-num">B</div>
+          <div><h4>Chaste Fidelity (fides)</h4><p>Refers to the exclusive fidelity of the marital relationship of one man with one woman. Expresses the commitment to a faithful and exclusive love in marriage.</p></div>
+        </div>
+        <div class="principle">
+          <div class="principle-num">C</div>
+          <div><h4>Unbreakable Bond (sacramentum)</h4><p>This unity demands permanence (indissolubility) for the entire life of the married couple. The union is so profound and total that only death can dissolve it.</p></div>
+        </div>
+        <div class="callout green">These elements — procreation, fidelity and sacrament — form the basis of the Church's understanding of marriage even today.</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     TOPIC 7: CANON LAWS GOVERNING MARRIAGE I
+══════════════════════════════════════════════ -->
+<section class="topic-section" id="topic7">
+  <div class="section-header" onclick="toggleSection(this)">
+    <span class="section-num">07</span>
+    <div class="section-title-wrap">
+      <div class="section-title">Canon Laws Governing Marriage I</div>
+      <div class="section-sub">Impediments · Annulment vs. Divorce · Canon 1055</div>
+    </div>
+    <span class="toggle-icon">▼</span>
+  </div>
+  <div class="section-body">
+
+    <div class="qa-block">
+      <div class="question">What is Marriage according to Canon Law? (Canon 1055)</div>
+      <div class="answer">
+        <div class="verse">
+          <p>"Marriage is a covenant, by which a man and a woman establish between themselves a partnership of their whole life, and which of its own very nature is ordered to the well-being of the spouses and to the procreation and upbringing of children. It has, between the baptized, been raised by Christ the Lord to the dignity of a sacrament."</p>
+          <cite>— Canon 1055, Code of Canon Law</cite>
+        </div>
+      </div>
+    </div>
+
+    <div class="qa-block">
+      <div class="question">How does Canon Law compare to Civil Law on Marriage?</div>
+      <div class="answer">
+        <div class="compare-table-wrap"><table class="compare-table">
+          <tr><th>Civil Law (Law of the Land)</th><th>Canon Law (Laws of the Church — "rule")</th></tr>
+          <tr><td>Marriage is a legal agreement (contract)</td><td>Marriage is a sacrament — a bonding of two people</td></tr>
+          <tr><td>Marriage License issued by City Hall</td><td>Civil and Church license issued by priest</td></tr>
+          <tr><td>Judge or Justice of the Peace performs ceremony</td><td>Priest performs ceremony; Church wedding with blessing before family and friends</td></tr>
+          <tr><td>Service: exchange of vows; Legal agreement</td><td>The Mass: Eucharistic Celebration and exchange of vows</td></tr>
+          <tr><td>Contract — marriage requires responsibilities</td><td>Covenant — sacred promise between the couple and God</td></tr>
+          <tr><td><strong>DIVORCE</strong> — legal separation; division of property</td><td><strong>ANNULMENT</strong> — not divorce; necessary to marry in the Church again</td></tr>
+        </table></div>
+      </div>
+    </div>
+
+    <div class="qa-block">
+      <div class="question">What are Impediments to Matrimony?</div>
+      <div class="answer">
+        <p>Impediments to matrimony are certain restrictions imposed by the law of God and of the Church which render a marriage contract <span class="key-term">invalid or unlawful</span> if such restrictions are violated when entering a marriage.</p>
+        <div class="compare-table-wrap"><table class="compare-table">
+          <tr><th>Diriment (Annulling/Nullifying) Impediments</th><th>Prohibitive (Hindering) Impediments</th></tr>
+          <tr><td>Render an attempted marriage <strong>altogether null and void, invalid</strong>.</td><td>Render a marriage <strong>unlawful, illicit, but valid</strong>.</td></tr>
+          <tr><td>Dispensations are only rarely granted.</td><td>The couple are married though unlawfully.</td></tr>
+          <tr><td>Without dispensation, there is NO marriage.</td><td>The marriage cannot be dissolved.</td></tr>
+        </table></div>
+        <div class="callout">When impediments exist, the Church either completely forbids the administration of the sacrament, or requires special assurances that the dangers may be reduced as far as possible.</div>
+      </div>
+    </div>
+
+    <div class="qa-block">
+      <div class="question">What are the Diriment Impediments?</div>
+      <div class="answer">
+        <div class="section-divider">Physical Defect</div>
+        <div class="principle"><div class="principle-num">1</div><div><h4>Lack of Age</h4><p>Boys under <strong>sixteen (16)</strong>; Girls under <strong>fourteen (14)</strong>.</p></div></div>
+        <div class="principle"><div class="principle-num">2</div><div><h4>Impotence</h4><p>Antecedent (exists prior to marriage) and perpetual (cannot be corrected) impotence, whether absolute (with any person) or relative (with particular individuals), invalidates matrimony by its very nature. <strong>Sterility</strong> neither forbids nor invalidates marriage. The Church cannot dispense from impotence. (Canon 1084)</p></div></div>
+        <div class="section-divider">Moral Bond</div>
+        <div class="principle"><div class="principle-num">3</div><div><h4>Existing Marriage Bond</h4><p>One who is already married cannot marry again while the other party is still living. This impediment is never given a dispensation. If someone believing his spouse dead contracts another marriage, he must immediately leave the second spouse if the first be discovered living.</p></div></div>
+        <div class="principle"><div class="principle-num">4</div><div><h4>Disparity of Worship</h4><p>Marriage between a Catholic and an unbaptized person (e.g., Mohammedans, Jews, Buddhists, Shintoists, infidels). Without dispensation, renders marriage invalid, null, and not a marriage.</p></div></div>
+        <div class="principle"><div class="principle-num">5</div><div><h4>Sacred Orders</h4><p>Persons in holy orders invalidly attempt matrimony (Canon 1086). The law of celibacy and the diriment impediment of sacred orders binds since deaconship. This is an impediment of ecclesiastical law.</p></div></div>
+        <div class="principle"><div class="principle-num">6</div><div><h4>Public Perpetual Vows of Chastity</h4><p>Men who have received major orders, monks, and nuns who have taken a solemn vow of chastity cannot contract a valid marriage.</p></div></div>
+        <div class="section-divider">Crime</div>
+        <div class="principle"><div class="principle-num">7</div><div><h4>Coercion</h4><p>Contracting parties must give consent freely. If undue stress is brought — through abduction, violence, fear of bodily injury, of being disinherited, etc. — the impediment is annulling and there is no marriage.</p></div></div>
+        <div class="principle"><div class="principle-num">8</div><div><h4>Crime</h4><p>A person who, for the purpose of entering marriage with a certain person, has brought about the death of that person's spouse or one's own spouse, invalidly attempts such marriage. (Canon 1090)</p></div></div>
+        <div class="section-divider">Relationship</div>
+        <div class="principle"><div class="principle-num">9</div><div><h4>Consanguinity (Blood Relationship)</h4><p>The bond that unites persons of the same blood. <strong>Direct line</strong>: marriage is invalid between all ancestors and descendants. <strong>Collateral line</strong>: marriage is invalid up to and including the <strong>4th degree</strong>. Degrees: siblings = 2nd; uncle-nephew = 3rd; first cousins = 4th; second cousins = 6th (collateral).</p></div></div>
+        <div class="principle"><div class="principle-num">10</div><div><h4>Affinity</h4><p>Relationship by marriage (in-laws). The survivor cannot marry the blood relations of his dead spouse. In the direct line (e.g., stepdaughter, mother-in-law) — no dispensation is granted. In the collateral line — extends to the 2nd degree, and may be dispensed. (Canon 1092)</p></div></div>
+        <div class="principle"><div class="principle-num">11</div><div><h4>Public Decency</h4><p>Arises from an invalid marriage after common life has been established, or from notorious and public concubinage (cohabitation of persons not legally married).</p></div></div>
+        <div class="principle"><div class="principle-num">12</div><div><h4>Spiritual Affinity</h4><p>Without dispensations, sponsors in Baptism cannot marry their godchildren. Example: a lay person cannot marry the person whom he administered lay baptism.</p></div></div>
+        <div class="principle"><div class="principle-num">13</div><div><h4>Legal Relationship</h4><p>Those who by civil law are incapable of contracting marriage by reason of a legal relation arising from adoption are also incapable, by Church law, of a valid marriage.</p></div></div>
+      </div>
+    </div>
+
+    <div class="qa-block">
+      <div class="question">How does an Annulment differ from a Divorce?</div>
+      <div class="answer">
+        <div class="compare-table-wrap"><table class="compare-table">
+          <tr><th>Divorce</th><th>Annulment</th></tr>
+          <tr><td>Legal termination of a marriage; ends or cancels a valid marriage; returns both parties to single status</td><td>Turns a marriage null and void by proving that a man and a woman were <em>never united in marriage</em> as husband and wife</td></tr>
+        </table></div>
+        <div class="callout">One must be separated definitively from a spouse for at least <strong>one year</strong> before filing an annulment case. An annulment is filed ordinarily when a marriage has become hopelessly irremediable or gravely intolerable.</div>
+      </div>
+    </div>
+
+    <div class="qa-block">
+      <div class="question">What are the Grounds for Annulment due to Defect/Lack of Consent?</div>
+      <div class="answer">
+        <div class="principle">
+          <div class="principle-num">A</div>
+          <div>
+            <h4>Lack of Sufficient Use of Reason (Canon 1095, 1°)</h4>
+            <p>Mental retardation, very low IQ — morons, insanity, and the like.</p>
+          </div>
+        </div>
+        <div class="principle">
+          <div class="principle-num">B</div>
+          <div>
+            <h4>Lack of Due Discretion — LDD (Canon 1095, 2°)</h4>
+            <p>Lack of either <strong>full will</strong> or <strong>full knowledge</strong> at the moment of consent ("I do").</p>
+            <p><strong>Common Causes:</strong></p>
+            <ul class="styled">
+              <li><strong>Immaturity</strong> — below 23 (female) or 25 (male) does not usually possess needed maturity. "Had I known better or been more mature/knowledgeable, I would not have consented."</li>
+              <li><strong>Pressure to Marry</strong> — external or internal, physical or psychological, moral or spiritual, parental or social (e.g., premarital pregnancy, shotgun marriage, fear of embarrassment, unhappy home, rebounding). "Had I not been pressured/forced, I would not have consented."</li>
+              <li><strong>Short Courtship</strong> — does not enable partners to know each other enough for a lifetime partnership. One year is not enough. "Had I been given enough time to know him/her better, I would not have consented."</li>
+              <li><strong>Impeded Knowledge</strong> — hidden venereal disease, other physical or psycho-emotional defects, hiding one's real status or essential background. "Had I known that he/she was like that, I would never have consented."</li>
+            </ul>
+          </div>
+        </div>
+        <div class="principle">
+          <div class="principle-num">C</div>
+          <div>
+            <h4>Lack of Due Competence — LDC (Canon 1095, 3°) — Incapacity to Assume Essential Obligations</h4>
+            <p>One may understand what marriage entails but not possess the needed ability to assume or fulfill its essential obligations, due to <strong>psychological defects</strong>.</p>
+            <div class="callout plum">Examples: manic-addict (sex, kleptomania), manic-depressive (bipolar), reactive depression, spouse batterer (physical/sexual/verbal/psycho-emotional), sexual neurosis, schizoid, schizophrenic, paranoid, histrionic, narcissistic, antisocial, borderline personality, alcoholism, substance-drug dependence, homosexuality, affective immaturity, hypersexuality (satyriasis/nymphomania), chronic/congenital liars, and the like.</div>
+          </div>
+        </div>
+        <div class="callout">
+          <strong>Two Common Errors:</strong><br>
+          1. A "capable" partner marries the "psychologically incapable" with hope of changing them. <em>No way! No one can change anyone.</em><br>
+          2. A "capable" spouse marries the "psychologically incapable" out of pity. <em>No way! Pity is pity; true consent to marriage as lifetime partnership is another.</em>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     TOPIC 8: CANON LAW GOVERNING MARRIAGE II
+══════════════════════════════════════════════ -->
+<section class="topic-section" id="topic8">
+  <div class="section-header" onclick="toggleSection(this)">
+    <span class="section-num">08</span>
+    <div class="section-title-wrap">
+      <div class="section-title">Canon Laws Governing Marriage II</div>
+      <div class="section-sub">What Makes a Valid Marriage? · Preparation · Form &amp; Celebration</div>
+    </div>
+    <span class="toggle-icon">▼</span>
+  </div>
+  <div class="section-body">
+
+    <div class="qa-block">
+      <div class="question">What is Canon Law?</div>
+      <div class="answer">
+        <p>"Canon" comes from the Greek <span class="key-term">kanon</span> — meaning straight rod, measuring stick, or rule.</p>
+        <p><strong>Canon Law</strong> is the oldest and continuously functioning legal system in the Western world. It is the internal legal system of the Catholic Church.</p>
+        <div class="callout">The supreme law of the Church is the salvation of souls — <em>salus animarum</em>. The purpose of Canon Law is to create order in the Church so that she organizes and governs herself. <em>Ubi societas ibi lex</em> — "Where there is a society, there is law."</div>
+        <div class="callout blue">Of all the seven sacraments, Matrimony has been the most widely challenged in the history of the Catholic Church. Over the centuries it has been the single principal cause of whole nations breaking with the Catholic Church — the Orthodox Churches in the 13th century, and Protestantism in the 16th century.</div>
+      </div>
+    </div>
+
+    <div class="qa-block">
+      <div class="question">What is the Canon Law Definition of Marriage? (Canon 1055-1)</div>
+      <div class="answer">
+        <div class="verse">
+          <p>"The matrimonial covenant, by which a man and a woman establishes between themselves the partnership of the whole of life and which is ordered by its nature to the good of the spouses and the procreation and education of offspring, has been raised by Christ the Lord to the dignity of a sacrament between the baptized."</p>
+          <cite>— Canon 1055-1</cite>
+        </div>
+        <div class="card-grid">
+          <div class="mini-card c1"><h4>1. Covenant</h4>An agreement between God and his people involving promises and commitment — not a mere contract. Lifelong commitment, sacrifice, love.</div>
+          <div class="mini-card c2"><h4>2. Partnership of Whole Life</h4>No individualistic attitude — you share all joys and sorrows, in sickness and in health, in good times and in bad, until death. <em>Consortio.</em></div>
+          <div class="mini-card c3"><h4>3. Good of the Spouses</h4>Well-being of husband and wife: mutual welfare, mutual support, mutual help, mutual assistance — material, intellectual, spiritual, and emotional well-being.</div>
+          <div class="mini-card c4"><h4>4. Procreation &amp; Education of Offspring</h4>No one should exclude this right of children from marital life. "It is in them that it finds its crowning glory." (CCC 1652)</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="qa-block">
+      <div class="question">What makes a Valid Marriage?</div>
+      <div class="answer">
+        <p>A valid marriage requires <strong>one man and one woman</strong>, at least one of whom is a baptized Latin Catholic, who:</p>
+        <div class="pill-row">
+          <span class="pill">Are properly disposed</span>
+          <span class="pill">Have fulfilled required preparation</span>
+          <span class="pill">Are free from impediments</span>
+          <span class="pill">Have the required intentions</span>
+        </div>
+        <div class="quick-facts">
+          <h4>Required Intentions</h4>
+          <ul>
+            <li><strong>Permanence</strong></li>
+            <li><strong>Exclusivity / Fidelity</strong></li>
+            <li><strong>Good of the spouses</strong></li>
+            <li><strong>Procreation</strong></li>
+            <li><strong>Sacramentality</strong> (among the baptized)</li>
+          </ul>
+          <p style="margin-top:.5rem;font-size:.8rem;color:var(--muted)">Parties need to understand and intend these things, or at least not <em>exclude</em> them from their consent.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="qa-block">
+      <div class="question">What is the Required Preparation for Marriage?</div>
+      <div class="answer">
+        <div class="principle">
+          <div class="principle-num">1</div>
+          <div><h4>Pre-Marital Inventory</h4><p>Do NOT set a wedding date until sure of the parties' freedom to marry.</p></div>
+        </div>
+        <div class="principle">
+          <div class="principle-num">2</div>
+          <div><h4>Formation Process</h4><p>Pre-Cana, Engagement Encounter, and similar programs.</p></div>
+        </div>
+        <div class="principle">
+          <div class="principle-num">3</div>
+          <div><h4>Pastoral Meetings</h4><p>Beginning <strong>6 months</strong> prior to the wedding.</p></div>
+        </div>
+        <div class="quick-facts">
+          <h4>Required Documents</h4>
+          <ul>
+            <li>Baptismal certificate for Catholics (within 6 months, with notations)</li>
+            <li>Proof of formation process</li>
+            <li>Marriage license</li>
+          </ul>
+        </div>
+        <div class="callout blue">The pastor of the Catholic party/parties is responsible for preparation. The pastor of the parish where marriage will be celebrated is responsible for ensuring required preparation is complete before allowing marriage in his parish. The marriage file and record is kept at the parish where marriage takes place.</div>
+      </div>
+    </div>
+
+    <div class="qa-block">
+      <div class="question">Who performs the marriage, and how is it celebrated?</div>
+      <div class="answer">
+        <div class="callout">Parties <strong>marry each other</strong> — they are the ministers of marriage. An authorized priest or deacon assists by asking for and receiving consent/vows of both parties before two witnesses.</div>
+        <div class="compare-table-wrap"><table class="compare-table">
+          <tr><th>Situation</th><th>Mass or Without Mass?</th></tr>
+          <tr><td>Between 2 Catholics</td><td>Within Mass is <strong>recommended</strong></td></tr>
+          <tr><td>Mixed Marriage (Catholic + baptized non-Catholic)</td><td>Without Mass is <strong>required</strong> (Bishop can give permission for within Mass)</td></tr>
+          <tr><td>Interfaith Marriage (Catholic + non-Christian)</td><td>Order of Celebrating Marriage between a Catholic and a Catechumen or Non-Christian is required</td></tr>
+        </table></div>
+        <div class="quick-facts">
+          <h4>Where &amp; When?</h4>
+          <ul>
+            <li>Marriages celebrated in the <strong>parish church</strong> of one of the Catholic parties.</li>
+            <li>Pastor can grant permission for marriage in a secondary church or another parish.</li>
+            <li>Local Ordinary can grant permission for marriage outside a Catholic church (e.g., Protestant church in a mixed marriage).</li>
+            <li>Marriages can be celebrated any day but <strong>Sunday, Good Friday, and Holy Saturday</strong>. Bishop can grant permission for a Sunday wedding.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<!-- SCROLL TO TOP -->
+<a href="#" id="scrolltop" aria-label="Scroll to top">↑</a>
+
+<script>
+// ── SECTION TOGGLE ──
+function toggleSection(header) {
+  header.classList.toggle('open');
+  const body = header.nextElementSibling;
+  body.classList.toggle('open');
+}
+
+// ── MOBILE MENU ──
+function toggleMenu() {
+  document.getElementById('nav-drawer').classList.toggle('open');
+}
+function closeMenu() {
+  document.getElementById('nav-drawer').classList.remove('open');
+}
+
+// ── SEARCH ──
+const searchInput = document.getElementById('search');
+const mainEl = document.getElementById('main');
+
+searchInput.addEventListener('input', function() {
+  const q = this.value.trim().toLowerCase();
+  mainEl.querySelectorAll('mark').forEach(m => m.replaceWith(document.createTextNode(m.textContent)));
+  mainEl.normalize();
+  if (!q) return;
+
+  function highlightNode(node) {
+    if (node.nodeType === 3) {
+      const idx = node.textContent.toLowerCase().indexOf(q);
+      if (idx >= 0) {
+        const range = document.createRange();
+        range.setStart(node, idx);
+        range.setEnd(node, idx + q.length);
+        const mark = document.createElement('mark');
+        range.surroundContents(mark);
+        return true;
+      }
+    } else if (node.nodeType === 1 && !['SCRIPT','STYLE','INPUT','MARK'].includes(node.tagName)) {
+      Array.from(node.childNodes).forEach(child => highlightNode(child));
+    }
+  }
+  highlightNode(mainEl);
+
+  // Auto-open sections containing matches
+  mainEl.querySelectorAll('mark').forEach(m => {
+    const section = m.closest('.topic-section');
+    if (section) {
+      const header = section.querySelector('.section-header');
+      const body = section.querySelector('.section-body');
+      if (!header.classList.contains('open')) {
+        header.classList.add('open');
+        body.classList.add('open');
+      }
+    }
+  });
+});
+
+// ── SCROLL TO TOP & PROGRESS BAR ──
+const scrollTopBtn = document.getElementById('scrolltop');
+const progressBar = document.getElementById('progress-bar');
+
+window.addEventListener('scroll', () => {
+  const scrolled = window.scrollY;
+  const total = document.documentElement.scrollHeight - window.innerHeight;
+  progressBar.style.width = (total > 0 ? (scrolled / total) * 100 : 0) + '%';
+  scrollTopBtn.classList.toggle('visible', scrolled > 400);
+});
+
+scrollTopBtn.addEventListener('click', e => {
+  e.preventDefault();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// ── KEYBOARD SHORTCUT: / to focus search ──
+document.addEventListener('keydown', e => {
+  if (e.key === '/' && document.activeElement !== searchInput) {
+    e.preventDefault();
+    searchInput.focus();
+    searchInput.select();
+  }
+});
+</script>
+</body>
+</html>
